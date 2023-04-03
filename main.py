@@ -25,7 +25,7 @@ def add_user(update, context):
             f.write(name)
         context.bot.send_message(chat_id=update.effective_chat.id, text= f'User with name: {name} and UniqueID: {unique_id} is created!')
     else:
-        context.bot.send_message(chat_id=update.effective_chat.id, text= 'You are not allowed using this command, contact your administrator!')
+        context.bot.send_message(chat_id=update.effective_chat.id, text= 'You are not allowed to use this command, contact your administrator!')
 
 #Func that allows to upload images
 def upload_images(update, context):
